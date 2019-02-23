@@ -1,0 +1,14 @@
+# ignored file extensions & system directories
+*~
+*_notes/
+*.log
+
+# ignored '.' files and directories
+._*
+.cache
+.DS_Store
+.htaccess
+.project
+.settings
+.tmproj
+.svn
