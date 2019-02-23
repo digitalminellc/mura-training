@@ -6,7 +6,7 @@ This image is specifically used for Mura Training. Online Mura training document
 
 # Get Up & Running
 
-First, clone the repository located at https://github.com/stevewithington/mura-training directly onto your desktop. Then, launch your shell program and run `$ docker-compose up` from within the cloned `../desktop/mura-training/` directory.
+First, clone the repository located at https://github.com/stevewithington/mura-training directly onto your desktop. Then, launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/mura-docker/` directory.
 
 # Companion Training Files
 
