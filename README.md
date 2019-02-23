@@ -10,6 +10,6 @@ First, clone the repository located at https://github.com/stevewithington/mura-t
 
 # Companion Training Files
 
-* [Content Manager Training](https://github.com/stevewithington/mura-training/1-admin)
+* [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/1-admin)
 * Theme Developer Training (*Coming soon*)
 * Core Developer Training (*Coming soon*)
