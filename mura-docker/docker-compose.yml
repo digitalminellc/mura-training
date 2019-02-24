@@ -30,6 +30,7 @@ services:
       - ./www/plugins:/app/plugins
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
+      - ./www/tmp:/app/tmp
     ports:
       - "8008:8080"
 
