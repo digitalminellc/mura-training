@@ -14,5 +14,5 @@
 .svn
 
 # ignore everything in www, except the .md files
-*/www
+#*/www
 !*/www/*/*.md
