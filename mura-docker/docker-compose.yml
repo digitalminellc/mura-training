@@ -31,7 +31,7 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training/:/app/training
-      - ./tmp/MuraBundle.zip:/tmp/MuraBundle.zip
+      - ./www/tmp/:/app/tmp
     ports:
       - "8008:8080"
 
