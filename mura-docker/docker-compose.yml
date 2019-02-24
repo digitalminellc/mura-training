@@ -31,7 +31,7 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training/:/app/training
-      - ./www/tmp/:/app/tmp
+      - ./tmp/:/app/tmp
     ports:
       - "8008:8080"
 
