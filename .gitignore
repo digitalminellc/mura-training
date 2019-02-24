@@ -12,3 +12,7 @@
 .settings
 .tmproj
 .svn
+
+# ignore everything in www, except the .md files
+*/www
+!*/www/*/*.md
