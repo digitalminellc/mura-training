@@ -15,4 +15,4 @@
 
 # ignore everything in www, except the .md files
 */www
-!*/www/*/*.md
+!*/www/*.md
