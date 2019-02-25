@@ -13,12 +13,15 @@
 .tmproj
 .svn
 
-# ignore everything in www
-/mura-docker/www
+# ignore Mura directories under `www`
+# Due to a performance-related quirk in Git, you can not negate a file that is ignored due to a pattern matching a directory
+*/modules
+*/plugins
+*/sites
+*/themes
 
-# un-ignore README.md and training
-!*/www/*/*.md
-!/mura-docker/www/training
+# un-ignore README.md
+!*.md
 
 # never ignore .gitignore
 !.gitignore
