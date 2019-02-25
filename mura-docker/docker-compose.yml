@@ -26,12 +26,12 @@ services:
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
     volumes:
-      - ./www/modules:/app/modules
-      - ./www/plugins:/app/plugins
-      - ./www/sites:/app/sites
-      - ./www/themes:/app/themes
-      - ./www/training:/app/training
-      - ./bundle:/app/tmp
+      - ./www:/app
+      # - ./www/plugins:/app/plugins
+      # - ./www/sites:/app/sites
+      # - ./www/themes:/app/themes
+      # - ./www/training:/app/training
+      # - ./www/tmp:/app/tmp
     ports:
       - "8008:8080"
 
