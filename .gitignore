@@ -13,6 +13,12 @@
 .tmproj
 .svn
 
-# ignore everything in www, except the .md files
-*/www
-!*/www/*.md
+# ignore everything in www
+/mura-docker/www
+
+# un-ignore README.md and training
+!*/www/*/*.md
+!/mura-docker/www/training
+
+# never ignore .gitignore
+!.gitignore
