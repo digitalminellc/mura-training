@@ -13,3 +13,7 @@ First, clone the repository located at https://github.com/stevewithington/mura-t
 * [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/1-admin)
 * Theme Developer Training (*Coming soon*)
 * Core Developer Training (*Coming soon*)
+
+# Building Your Own Image
+Make your desired changes, then run:
+`$ docker-compose build --no-cache`

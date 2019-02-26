@@ -32,9 +32,10 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training:/app/training
-      - ./www/tmp:/app/tmp
+      - ./www/tmp:/tmp
     ports:
       - "8008:8080"
+    tty: true
 
   # DB
   svc_muradb:

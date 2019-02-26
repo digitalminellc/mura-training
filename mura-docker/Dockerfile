@@ -9,10 +9,10 @@ RUN apt-get update && apt-get install -y git \
     && cp -R MuraCMS/. ${APP_DIR} \
     && rm -rf MuraCMS
 
-COPY bundle.sh ${BUILD_DIR}/bundle.sh
+# COPY bundle.sh ${BUILD_DIR}/bundle.sh
 
-RUN chmod +x ${BUILD_DIR}/bundle.sh
+# RUN chmod +x ${BUILD_DIR}/bundle.sh
 
-CMD $BUILD_DIR/bundle.sh
+# CMD $BUILD_DIR/bundle.sh
 
 EXPOSE 8080 8443
