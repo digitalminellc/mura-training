@@ -20,6 +20,9 @@
 */www/plugins
 */www/sites
 
+# Ignore build data
+*/bundle/hsperfdata_root
+
 # un-ignore any README.md
 !README.md
 
