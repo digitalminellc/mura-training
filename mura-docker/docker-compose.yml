@@ -32,7 +32,7 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training:/app/training
-      - ./www/tmp:/tmp
+      - ./bundle:/tmp
     ports:
       - "8008:8080"
     tty: true

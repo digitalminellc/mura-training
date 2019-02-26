@@ -13,18 +13,15 @@
 .tmproj
 .svn
 
-# ignore Mura directories under `www`
-# Due to a performance-related quirk in Git, you can not negate a file that is ignored due to a pattern matching a directory
-**/modules
-**/plugins
-**/sites
-**/themes
+# Due to a performance-related quirk in Git, 
+# you can not negate a file that is ignored due to a pattern matching a directory
+# so we'll just ignore these specific directories
+*/www/modules
+*/www/plugins
+*/www/sites
 
-# un-ignore README.md
-!*.md
-
-# don't ignore MuraBundle.zip
-!*/tmp
+# un-ignore any README.md
+!README.md
 
 # never ignore .gitignore
 !.gitignore
