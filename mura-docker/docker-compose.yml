@@ -10,6 +10,7 @@ services:
     depends_on:
       - svc_muradb
     environment:
+      CFCONFIG_ADMINPASSWORD: mura
       MURA_ADMIN_USERNAME: admin
       MURA_ADMIN_PASSWORD: admin
       MURA_ADMINEMAIL: steve@digitalmine.com
@@ -25,6 +26,7 @@ services:
       MURA_INDEXFILEINURLS: "true"
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
+      #LUCEE_JAVA_OPTS: "-Xms512m -Xmx1024m"
     volumes:
       - ./www/plugins:/app/plugins
       - ./www/sites:/app/sites
