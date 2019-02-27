@@ -5,12 +5,11 @@ services:
   mura:
     build:
       context: .
-      # context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-lucee5-mysql
+      # context: https://github.com/stevewithington/mura-training.git#:mura-docker
     image: stevewithington/mura-training:latest
     depends_on:
       - svc_muradb
     environment:
-      CFCONFIG_ADMINPASSWORD: mura
       MURA_ADMIN_USERNAME: admin
       MURA_ADMIN_PASSWORD: admin
       MURA_ADMINEMAIL: steve@digitalmine.com
@@ -26,13 +25,15 @@ services:
       MURA_INDEXFILEINURLS: "true"
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
+      CFCONFIG_ADMINPASSWORD: P@55w0rd!
       #LUCEE_JAVA_OPTS: "-Xms512m -Xmx1024m"
     volumes:
+      - ./www/modules:/app/modules
       - ./www/plugins:/app/plugins
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training:/app/training
-      - ./bundle:/tmp
+      # - ./bundle:/tmp
     ports:
       - "8008:8080"
     tty: true
