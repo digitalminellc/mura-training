@@ -12,7 +12,7 @@ services:
     environment:
       MURA_ADMIN_USERNAME: admin
       MURA_ADMIN_PASSWORD: admin
-      MURA_ADMINEMAIL: steve@digitalmine.com
+      MURA_ADMINEMAIL: steve.withington@blueriver.com
       MURA_APPRELOADKEY: appreload
       MURA_DATASOURCE: dsn_mura
       MURA_DATABASE: muradb
@@ -33,7 +33,6 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
       - ./www/training:/app/training
-      # - ./bundle:/tmp
     ports:
       - "8008:8080"
     tty: true

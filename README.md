@@ -6,7 +6,19 @@ The [Mura Training Docker Image](https://hub.docker.com/r/stevewithington/mura-t
 
 # Get Up & Running
 
-First, clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop. Then, launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/mura-docker/` directory.
+First, clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop. Then, launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/mura-docker/` directory. Once the image is up and running, launch a browser and navigate to http://localhost:8008/ to view the site.
+
+## Mura Login Information
+
+* Admin: http://localhost:8008/admin/
+* Username: `admin`
+* Password: `P@55w0rd!`
+
+## Lucee Login Information
+
+* Admin: http://localhost:8888/lucee/admin/server.cfm
+* Password: `P@55w0rd!`
+
 
 # Companion Training Files
 
@@ -14,11 +26,11 @@ Official Mura Training uses the following additional resources and files for eac
 
 * [Mura Documentation](https://docs.getmura.com)
     * This is the documentation used for each training segment.
-* [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/1-admin)
+* [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/companion-files/1-admin)
     * These files are used for the Admin/Content Manager Training segment (1 day)
-* Theme Developer Training (*Coming soon*)
+* [Theme Developer Training](https://github.com/stevewithington/mura-training/tree/master/companion-files/2-theme)
     * These files are used for the Theme Developer Training segment (1 day)
-* Core Developer Training (*Coming soon*)
+* [Core Developer Training](https://github.com/stevewithington/mura-training/tree/master/companion-files/3-core)
     * These files are used for the Core Developer Training segment (3 days)
 
 # Building Your Own Image
