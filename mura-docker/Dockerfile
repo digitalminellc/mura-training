@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y git \
     && rm -rf MuraCMS \
     && git clone --branch master --single-branch --depth 1 https://github.com/blueriver/MuraBootstrap4Bundle.git \
     && mkdir ${BUILD_DIR}/tmp \
-    && cp MuraBootstrap4Bundle/MuraBundle.zip ${BUILD_DIR}/tmp \
-    && ls -l ${BUILD_DIR}/tmp \
+    && cp MuraBootstrap4Bundle/MuraBundle.zip ${APP_DIR}/tmp \
+    && find . -type f \
     && rm -rf MuraBootstrap4Bundle
 
 EXPOSE 8080 8443
