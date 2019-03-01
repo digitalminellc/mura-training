@@ -2,24 +2,12 @@ FROM ortussolutions/commandbox:lucee5
 
 ENV APP_DIR="/app"
 
-RUN echo 'update apt-get and install git' \
-    && apt-get update && apt-get install -y git && apt-get install -y rsync \
-    && echo 'apt-get updated, git & rsync installed' \
+RUN apt-get update && apt-get install -y git && apt-get install -y rsync \
     && rm -rf /var/lib/apt/lists/* \
-    && echo 'Cloning MuraCMS ...' \
     && git clone --branch 7.1 --single-branch --depth 1 https://github.com/blueriver/MuraCMS.git \
-    && echo 'MuraCMS cloned' \
     && rsync -r --exclude '.git' MuraCMS/. ${APP_DIR} \
-    && echo 'MuraCMS copied' \
-    && echo 'Cloning MuraBootstrap4Bundle ...' \
     && git clone --branch master --single-branch --depth 1 https://github.com/blueriver/MuraBootstrap4Bundle.git \
-    && echo 'MuraBootstrap4Bundle cloned' \
     && rsync -r --exclude '.git' MuraBootstrap4Bundle/. /tmp \
-    && echo 'MuraBundle copied' \
-    && echo 'Cleaning up ...' \
-    && rm -rf MuraCMS MuraBootstrap4Bundle \
-    && echo 'Cleanup completed' \
-    && echo '***   DIRECTORIES & FILES ******************************' \
-    && find . -type f 
+    && rm -rf MuraCMS MuraBootstrap4Bundle
 
 EXPOSE 8080 8443
