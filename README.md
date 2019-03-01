@@ -5,8 +5,11 @@ The [Mura Training Docker Image](https://hub.docker.com/r/stevewithington/mura-t
 **Please Note:** If you're looking for the "*Official*" Mura Docker image, please visit https://hub.docker.com/r/blueriver/muracms/.
 
 # Get Up & Running
+Assuming you have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running on your computer (*Desktop Community* edition is perfectly fine), follow the steps below.
 
-First, clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop. Then, launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/mura-docker/` directory. Once the image is up and running, launch a browser and navigate to http://localhost:8008/ to view the site.
+1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
+2. Launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/mura-docker/` directory
+3. Once the image is up and running, launch a browser and navigate to http://localhost:8008/ to view the site.
 
 ## Mura Login Information
 
