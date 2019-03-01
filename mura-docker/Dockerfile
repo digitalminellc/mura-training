@@ -14,13 +14,13 @@ RUN echo 'update apt-get and install git' \
     && echo 'Cloning MuraBootstrap4Bundle ...' \
     && git clone --branch master --single-branch --depth 1 https://github.com/blueriver/MuraBootstrap4Bundle.git \
     && echo 'MuraBootstrap4Bundle cloned' \
-    #&& mkdir ${BUILD_DIR}/tmp \
-    && cp MuraBootstrap4Bundle/MuraBundle.zip ${APP_DIR}/tmp \
+    && mkdir ${APP_DIR}/tmp \
+    && cp MuraBootstrap4Bundle/. ${APP_DIR}/tmp \
     && echo 'MuraBundle copied' \
-    && echo '***   DIRECTORIES & FILES ******************************' \
-    && find . -type f \
     && echo 'Cleaning up ...' \
     && rm -rf MuraCMS MuraBootstrap4Bundle \
     && echo 'Cleanup completed' \
+    && echo '***   DIRECTORIES & FILES ******************************' \
+    && find . -type f 
 
 EXPOSE 8080 8443
