@@ -9,13 +9,12 @@ RUN echo 'update apt-get and install git' \
     && echo 'Cloning MuraCMS ...' \
     && git clone --branch 7.1 --single-branch --depth 1 https://github.com/blueriver/MuraCMS.git \
     && echo 'MuraCMS cloned' \
-    && cp -R MuraCMS/. ${APP_DIR} \
+    && rsync -r --exclude '.git' MuraCMS/. ${APP_DIR} \
     && echo 'MuraCMS copied' \
     && echo 'Cloning MuraBootstrap4Bundle ...' \
     && git clone --branch master --single-branch --depth 1 https://github.com/blueriver/MuraBootstrap4Bundle.git \
     && echo 'MuraBootstrap4Bundle cloned' \
-    ##&& cp -R MuraBootstrap4Bundle/. ${APP_DIR}/tmp \
-    && rsync -r --exclude '.git' MuraBootstrap4Bundle/. ${APP_DIR}/tmp \
+    && rsync -r --exclude '.git' MuraBootstrap4Bundle/. ${BUILD_DIR}/tmp \
     && echo 'MuraBundle copied' \
     && echo 'Cleaning up ...' \
     && rm -rf MuraCMS MuraBootstrap4Bundle \

@@ -19,7 +19,7 @@
 */www/modules
 */www/plugins
 */www/sites
-#*/www/themes
+*/www/themes
 
 # Ignore build data
 */bundle/hsperfdata_root
