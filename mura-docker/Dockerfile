@@ -14,8 +14,7 @@ RUN echo 'update apt-get and install git' \
     && echo 'Cloning MuraBootstrap4Bundle ...' \
     && git clone --branch master --single-branch --depth 1 https://github.com/blueriver/MuraBootstrap4Bundle.git \
     && echo 'MuraBootstrap4Bundle cloned' \
-    && mkdir ${APP_DIR}/tmp \
-    && cp MuraBootstrap4Bundle/. ${APP_DIR}/tmp \
+    && cp -R MuraBootstrap4Bundle/. ${APP_DIR}/tmp \
     && echo 'MuraBundle copied' \
     && echo 'Cleaning up ...' \
     && rm -rf MuraCMS MuraBootstrap4Bundle \
