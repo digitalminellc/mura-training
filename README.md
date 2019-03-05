@@ -45,18 +45,18 @@ Follow the steps outlined below:
 5. If the site only contains an empty home page, navigate to http://localhost:8008/?appreload&applydbupdates and the site should then be populated with sample content.
 
 
-### Mura Login Information
+### Mura Admin Login Information
 
 This image uses [Mura](https://www.getmura.com), an open-source digital experiences platform. To learn more about Mura, visit https://www.getmura.com.
-* Admin: http://localhost:8008/admin/
+* Admin Login URL: http://localhost:8008/admin/
 * Username: `admin`
 * Password: `P@55w0rd!`
 
 
-### Lucee Login Information
+### Lucee Admin Login Information
 
 This image uses [Lucee](https://lucee.org), the leading open-source CFML application server/engine. To learn more about Lucee, visit https://lucee.org.
-* Admin: http://localhost:8008/lucee/admin/server.cfm
+* Admin Login URL: http://localhost:8008/lucee/admin/server.cfm
 * Password: `P@55w0rd!`
 
 
