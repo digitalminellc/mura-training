@@ -64,11 +64,11 @@ Official Mura Training uses the following additional resources and files for eac
 * [Mura Documentation](https://docs.getmura.com)
     * Documentation used for each training segment.
 * [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/www/training/1-admin)
-    * Companion files used for the Admin/Content Manager Training segment (1 day)
+    * Companion files used for the Admin/Content Manager Training segment (1 day / 8 hours)
 * [Theme Developer Training](https://github.com/stevewithington/mura-training/tree/master/www/training/2-theme)
-    * Companion files used for the Theme Developer Training segment (1 day)
+    * Companion files used for the Theme Developer Training segment (1 day / 8 hours)
 * [Core Developer Training](https://github.com/stevewithington/mura-training/tree/master/www/training/3-core)
-    * Companion files used for the Core Developer Training segment (3 days)
+    * Companion files used for the Core Developer Training segment (3 days / 24 hours)
 
 
 # Building Your Own Image
