@@ -19,7 +19,7 @@ Assuming you have [Docker Desktop](https://www.docker.com/products/docker-deskto
 
 ## Lucee Login Information
 
-* Admin: http://localhost:8888/lucee/admin/server.cfm
+* Admin: http://localhost:8008/lucee/admin/server.cfm
 * Password: `P@55w0rd!`
 
 
