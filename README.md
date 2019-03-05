@@ -16,7 +16,29 @@ Follow the steps outlined below:
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
 2. Launch your shell program and `cd` into the cloned `../mura-training/` directory
 3. Run `$ docker-compose up`
-4. Once the image is finished loading, launch a browser window and navigate to http://localhost:8008/.
+    * Docker will then begin to do its thing
+        ```
+        Creating network "mura-training_default" with the default driver
+        Creating volume "mura-training_vol_muradb" with default driver
+        Pulling svc_muradb (mysql:5.7)...
+        5.7: Pulling from library/mysql
+        f7e2b70d04ae: Pull complete
+        etc ...
+        ```
+    * The first time this is run, it will take awhile to finish. Once you see a notification about the `WEB CONTEXT`, the server should be ready and you may proceed to the next step.    
+
+        ``` 
+        mura_1        | [INFO ] runwar.context: ===========================================
+        mura_1        | WEB CONTEXT (8c069df52082beee3c95ca17836fb8e2)
+        mura_1        | -------------------------------------------------------------------
+        mura_1        | - config:/root/serverHome/WEB-INF/lucee-web (custom setting)
+        mura_1        | - webroot:/app
+        mura_1        | - hash:8c069df52082beee3c95ca17836fb8e2
+        mura_1        | - label:8c069df52082beee3c95ca17836fb8e2
+        mura_1        | ===================================================================
+        ```
+
+4. Once the image is finished loading and the server is ready, launch a browser window and navigate to http://localhost:8008/.
 5. **Important!** If this is the first time you have launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
 
 
