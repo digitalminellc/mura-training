@@ -1,2 +1,2 @@
 # Plugins
-Plugins go here
+Plugins go here.

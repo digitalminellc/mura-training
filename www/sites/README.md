@@ -1,2 +1,2 @@
 # Sites
-Site files go here
+Site files go here.
