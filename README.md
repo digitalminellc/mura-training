@@ -39,7 +39,7 @@ Follow the steps outlined below:
         ```
 
 4. Once the image is finished loading and the server is ready, launch a browser window and navigate to http://localhost:8008/.
-5. **Important!** If this is the first time you have launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
+5. If the site only contains an empty home page, navigate to http://localhost:8008/?appreload&applydbupdates and the site should then be populated with sample content.
 
 
 ### Mura Login Information
