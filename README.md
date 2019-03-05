@@ -10,9 +10,10 @@ The [Mura Training Docker Image](https://hub.docker.com/r/stevewithington/mura-t
 Assuming you have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running on your computer (*Desktop Community* edition is perfectly fine), follow the steps below.
 
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
-2. Launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/` directory
-3. Once the image is up and running, launch a browser and navigate to http://localhost:8008/ to view the site.
-4. **Important!** If this is the first time you've launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
+2. Launch your shell program, `cd` into the cloned `../mura-training/` directory
+3. Run `$ docker-compose up`
+4. Once the image is finished loading, launch a browser window and navigate to http://localhost:8008/.
+5. **Important!** If this is the first time you have launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
 
 
 ## Mura Login Information
@@ -35,16 +36,19 @@ This image uses [Lucee](https://lucee.org), the leading open-source CFML applica
 Official Mura Training uses the following additional resources and files for each segment of training.
 
 * [Mura Documentation](https://docs.getmura.com)
-    * This is the documentation used for each training segment.
+    * Documentation used for each training segment.
 * [Content Manager Training](https://github.com/stevewithington/mura-training/tree/master/www/training/1-admin)
-    * These files are used for the Admin/Content Manager Training segment (1 day)
+    * Companion files used for the Admin/Content Manager Training segment (1 day)
 * [Theme Developer Training](https://github.com/stevewithington/mura-training/tree/master/www/training/2-theme)
-    * These files are used for the Theme Developer Training segment (1 day)
+    * Companion files used for the Theme Developer Training segment (1 day)
 * [Core Developer Training](https://github.com/stevewithington/mura-training/tree/master/www/training/3-core)
-    * These files are used for the Core Developer Training segment (3 days)
+    * Companion files used for the Core Developer Training segment (3 days)
 
 
 # Building Your Own Image
 
-If you're attending training, please don't make any changes to the [Dockerfile](https://github.com/stevewithington/mura-training/blob/master/Dockerfile) or [docker-compose.yml](https://github.com/stevewithington/mura-training/blob/master/docker-compose.yml) file until the conclusion of your training. At that point, feel free to make your desired changes, then simply run:
-`$ docker-compose build --no-cache`
+If you're attending training, please do *not* make any changes to the [Dockerfile](https://github.com/stevewithington/mura-training/blob/master/Dockerfile) or [docker-compose.yml](https://github.com/stevewithington/mura-training/blob/master/docker-compose.yml) file until the conclusion of your training. At that point, feel free to make your desired changes, then simply run the following from your command line:
+
+```
+  $ docker-compose build --no-cache
+```
