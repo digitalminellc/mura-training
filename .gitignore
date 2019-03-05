@@ -16,10 +16,10 @@
 # Due to a performance-related quirk in Git, 
 # you can not negate a file that is ignored due to a pattern matching a directory
 # so we'll just ignore these specific directories
-*/www/modules
-*/www/plugins
-*/www/sites
-*/www/themes
+/www/modules
+/www/plugins
+/www/sites
+/www/themes
 
 # Ignore build data
 */bundle/hsperfdata_root

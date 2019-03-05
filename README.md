@@ -10,6 +10,7 @@ Assuming you have [Docker Desktop](https://www.docker.com/products/docker-deskto
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
 2. Launch your shell program and run `$ docker-compose up` from within the cloned `../mura-training/` directory
 3. Once the image is up and running, launch a browser and navigate to http://localhost:8008/ to view the site.
+4. **Important!** If this is the first time you've launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
 
 ## Mura Login Information
 
