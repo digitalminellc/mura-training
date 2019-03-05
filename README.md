@@ -15,7 +15,10 @@ Follow the steps outlined below:
 
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
 2. Launch your shell program and `cd` into the cloned `../mura-training/` directory
-3. Run `$ docker-compose up`
+3. Run the following command:
+    ```
+    $ docker-compose up
+    ```
     * Docker will then begin to do its thing. *The first time this is run, it will take awhile to finish.*
         ```
         Creating network "mura-training_default" with the default driver
