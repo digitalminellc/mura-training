@@ -28,7 +28,7 @@ Follow the steps outlined below to get the Mura training container up and runnin
         f7e2b70d04ae: Pull complete
         etc ...
         ```
-    * Once you see a notification about the `WEB CONTEXT`, the server should be ready and you may proceed to the next step.    
+    * Once you see a notification about the `WEB CONTEXT`, the container should be ready and you may proceed to the next step.    
 
         ``` 
         mura_1        | [INFO ] runwar.context: ===========================================
