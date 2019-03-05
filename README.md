@@ -7,16 +7,20 @@ The [Mura Training Docker Image](https://hub.docker.com/r/stevewithington/mura-t
 
 # Get Up & Running
 
-Assuming you have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed and running on your computer (*Desktop Community* edition is perfectly fine), follow the steps below.
+[Docker Desktop](https://www.docker.com/products/docker-desktop) must installed and running on your computer (*Desktop Community* edition is perfectly fine) prior to following the steps below.
+
+## After Docker Desktop Has Been Installed
+
+Follow the steps outlined below:
 
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
-2. Launch your shell program, `cd` into the cloned `../mura-training/` directory
+2. Launch your shell program and `cd` into the cloned `../mura-training/` directory
 3. Run `$ docker-compose up`
 4. Once the image is finished loading, launch a browser window and navigate to http://localhost:8008/.
 5. **Important!** If this is the first time you have launched the site, navigate to http://localhost:8008/?appreload&applydbupdates and the site should now be populated with sample content.
 
 
-## Mura Login Information
+### Mura Login Information
 
 This image uses [Mura](https://www.getmura.com), an open-source digital experiences platform. To learn more about Mura, visit https://www.getmura.com.
 * Admin: http://localhost:8008/admin/
@@ -24,7 +28,7 @@ This image uses [Mura](https://www.getmura.com), an open-source digital experien
 * Password: `P@55w0rd!`
 
 
-## Lucee Login Information
+### Lucee Login Information
 
 This image uses [Lucee](https://lucee.org), the leading open-source CFML application server/engine. To learn more about Lucee, visit https://lucee.org.
 * Admin: http://localhost:8008/lucee/admin/server.cfm
