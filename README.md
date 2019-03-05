@@ -16,7 +16,7 @@ Follow the steps outlined below:
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
 2. Launch your shell program and `cd` into the cloned `../mura-training/` directory
 3. Run `$ docker-compose up`
-    * Docker will then begin to do its thing
+    * Docker will then begin to do its thing. *The first time this is run, it will take awhile to finish.*
         ```
         Creating network "mura-training_default" with the default driver
         Creating volume "mura-training_vol_muradb" with default driver
@@ -25,7 +25,7 @@ Follow the steps outlined below:
         f7e2b70d04ae: Pull complete
         etc ...
         ```
-    * The first time this is run, it will take awhile to finish. Once you see a notification about the `WEB CONTEXT`, the server should be ready and you may proceed to the next step.    
+    * Once you see a notification about the `WEB CONTEXT`, the server should be ready and you may proceed to the next step.    
 
         ``` 
         mura_1        | [INFO ] runwar.context: ===========================================
