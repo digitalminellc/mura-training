@@ -11,7 +11,7 @@ The [Mura Training Docker Image](https://hub.docker.com/r/stevewithington/mura-t
 
 ## After Docker Desktop Has Been Installed
 
-Follow the steps outlined below:
+Follow the steps outlined below to get the Mura training container up and running.
 
 1. Clone the [Mura Training repository](https://github.com/stevewithington/mura-training) to your desktop
 2. Launch your shell program and `cd` into the cloned `../mura-training/` directory
@@ -41,8 +41,18 @@ Follow the steps outlined below:
         mura_1        | ===================================================================
         ```
 
-4. Once the image is finished loading and the server is ready, launch a browser window and navigate to http://localhost:8008/.
+4. Once the container is ready, launch a browser window and navigate to http://localhost:8008/.
 5. If the site only contains an empty home page, navigate to http://localhost:8008/?appreload&applydbupdates and the site should then be populated with sample content.
+
+### Stop The Mura Training Container
+
+To stop the container, follow the steps below.
+
+1. Launch your shell program and `cd` into the cloned `../mura-training/` directory
+2. Run the following command:
+    ```
+    $ docker-compose down
+    ```
 
 
 ### Mura Admin Login Information
