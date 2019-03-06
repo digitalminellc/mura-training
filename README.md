@@ -60,7 +60,7 @@ To stop the container, follow the steps below.
 This image uses [Mura](https://www.getmura.com), an open-source digital experiences platform. To learn more about Mura, visit https://www.getmura.com.
 * Admin Login URL: http://localhost:8008/admin/
 * Username: `admin`
-* Password: `P@55w0rd!`
+* Password: `admin`
 
 
 ### Lucee Admin Login Information
