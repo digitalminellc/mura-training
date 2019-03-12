@@ -1,7 +1,7 @@
 <!---
   Author: Stephen J. Withington, Jr.
   Notes:  Place this under a temp directory within your Mura CMS root to test.
-          For example: http://yourdomain.com/temp/json-test.cfm
+          For example: http://yourdomain.com/training/json-test.cfm
 --->
 <cfscript>
   param name="form.endpoint" default="content/new";

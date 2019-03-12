@@ -77,7 +77,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          // compliation.css  :  source.less
+          // compilation.css  :  source.less
           'assets/dist/css/<%= pkg.name %>.min.css': 'assets/src/css/less/<%= pkg.name %>.less'
         }
       }

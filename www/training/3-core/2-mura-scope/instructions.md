@@ -1,4 +1,5 @@
 # Mura Scope Lab Exercise
+
 ## Let's chat with Mura
 
 1. Use the Mura Scope to output the page title in a layout template
