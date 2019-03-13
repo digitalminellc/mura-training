@@ -32,6 +32,7 @@ module.exports = function(grunt) {
     //       from: 'Handlebars',
     //       to: function () {
     //         return 'window.mura.Handlebars';
+    //         //return 'Mura.Handlebars';
     //       }
     //     }]
     //   }
