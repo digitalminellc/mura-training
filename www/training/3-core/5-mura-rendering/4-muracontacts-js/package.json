@@ -1,8 +1,7 @@
-
 {
   "name": "muracontacts",
   "version": "1.0.0",
-  "description": "Example Mura CMS display object. Used for training purposes only.",
+  "description": "Example Mura Module. Used for training purposes only.",
   "main": "assets/dist/js/muracontacts.min.js",
   "dependencies": {},
   "devDependencies": {
@@ -21,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Stephen J. Withington, Jr. <stephenwithington@gmail.com> (http://stephenwithington.com)",
+  "author": "Stephen J. Withington, Jr. <stephenwithington@gmail.com> (https://linkedin.com/in/stevewithington/)",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

@@ -1,11 +1,10 @@
 # muracontacts
 
-
 ## Please Note
 
-This is intended for Mura CMS (v7+) training purposes only. It should **not** to be used for production purposes.
+This is intended for [Mura](http://www.getmura.com) (v7.1+) training purposes only. It should **not** to be used for production purposes.
 
-This is the [JS branch of the muracontacts project](https://github.com/stevewithington/muracontacts/tree/js). It is intended to be an example of how a JavaScript developer might approach creating a simple, framework-agnostic application as a self-contained display object.
+This is the [JS branch of the muracontacts project](https://github.com/stevewithington/muracontacts/tree/js). It is intended to be an example of how a JavaScript developer might approach creating a simple, framework-agnostic application as a self-contained Mura Module.
 
 
 ## Instructions
@@ -29,7 +28,7 @@ Assuming you have [Node.js](https://nodejs.org) installed, you'll need to run `n
 
 ## License
 
-Copyright 2016-2018 Stephen J. Withington, Jr.
+Copyright 2016-2019 [Stephen J. Withington, Jr.](https://linkedin.com/in/stevewithington/)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 
