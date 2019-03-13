@@ -1,7 +1,7 @@
 this["muracontacts"] = this["muracontacts"] || {};
 this["muracontacts"]["templates"] = this["muracontacts"]["templates"] || {};
 
-window.mura.Handlebars.registerPartial("contactlistitem", window.mura.Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+Handlebars.registerPartial("contactlistitem", Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "<tr>\n\n  <td>\n    <a class=\"btn\" href=\"./#mcaction=edit&amp;pid="
@@ -15,7 +15,7 @@ window.mura.Handlebars.registerPartial("contactlistitem", window.mura.Handlebars
     + "\">\n      <button type=\"submit\" class=\"btn btn-danger btn-delete btn-delete-contact\">\n        <i class=\"fa fa-trash\"></i>\n      </button>\n    </form>\n  </td>\n\n</tr>\n";
 },"useData":true}));
 
-window.mura.Handlebars.registerPartial("phonelistitem", window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+Handlebars.registerPartial("phonelistitem", Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "  <li class=\"muracontacts-phonenumber\">\n    <a class=\"btn btn-sm btn-primary\" href=\"./#mcaction=editphone&amp;pid="
@@ -35,7 +35,7 @@ window.mura.Handlebars.registerPartial("phonelistitem", window.mura.Handlebars.t
   return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.properties : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true}));
 
-this["muracontacts"]["templates"]["body"] = window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["muracontacts"]["templates"]["body"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "    <div class=\"muracontacts-heading\">\n      <h2>"
@@ -67,7 +67,7 @@ this["muracontacts"]["templates"]["body"] = window.mura.Handlebars.template({"1"
     + "\n</div>\n";
 },"useData":true});
 
-this["muracontacts"]["templates"]["contactlisttable"] = window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["muracontacts"]["templates"]["contactlisttable"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.people : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
@@ -85,7 +85,7 @@ this["muracontacts"]["templates"]["contactlisttable"] = window.mura.Handlebars.t
     + "\n    <tfoot>\n      <tr>\n        <td colspan=\"2\" class=\"addrow\">\n          <a class=\"btn btn-primary\" href=\"./#mcaction=edit&amp;pid=\">\n            <i class=\"fa fa-plus\"></i>\n          </a>\n        </td>\n    </tfoot>\n\n  </table>\n</div>\n";
 },"usePartial":true,"useData":true});
 
-this["muracontacts"]["templates"]["editcontact"] = window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["muracontacts"]["templates"]["editcontact"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "    <form method=\"post\" class=\"muracontacts-form muracontacts-formlink\">\n      <input type=\"hidden\" name=\"mcaction\" value=\"delete\">\n      <input type=\"hidden\" name=\"pid\" value=\""
@@ -126,7 +126,7 @@ this["muracontacts"]["templates"]["editcontact"] = window.mura.Handlebars.templa
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.exists : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 
-this["muracontacts"]["templates"]["editphone"] = window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
+this["muracontacts"]["templates"]["editphone"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "  <div class=\"pad\">\n    <a class=\"btn btn-primary\" href=\"./#mcaction=edit&amp;pid="
@@ -147,7 +147,7 @@ this["muracontacts"]["templates"]["editphone"] = window.mura.Handlebars.template
     + alias4(((helper = (helper = helpers.personid || (depth0 != null ? depth0.personid : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"personid","hash":{},"data":data}) : helper)))
     + "\">\n    <input type=\"hidden\" name=\"phonenumberid\" value=\""
     + alias4(((helper = (helper = helpers.phonenumberid || (depth0 != null ? depth0.phonenumberid : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"phonenumberid","hash":{},"data":data}) : helper)))
-    + "\">\n    <input type=\"hidden\" name=\"issubmitted\" value=\"true\">\n\n    <button type=\"submit\" class=\"btn btn-primary\">\n      <i class=\"fa fa-floppy-o\"></i>\n    </button>\n    <a class=\"btn btn-default\" href=\"./#mcaction=edit&amp;pid="
+    + "\">\n    <input type=\"hidden\" name=\"issubmitted\" value=\"true\">\n\n    <button type=\"submit\" class=\"btn btn-primary\">\n      <i class=\"fa fa-floppy-o\"></i>\n    </button>\n    <a class=\"btn btn-warning\" href=\"./#mcaction=edit&amp;pid="
     + alias4(((helper = (helper = helpers.personid || (depth0 != null ? depth0.personid : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"personid","hash":{},"data":data}) : helper)))
     + "\"><i class=\"fa fa-ban\"></i></a>\n  </form>\n";
 },"2":function(container,depth0,helpers,partials,data) {
@@ -176,7 +176,7 @@ this["muracontacts"]["templates"]["editphone"] = window.mura.Handlebars.template
   return ((stack1 = helpers["with"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.phone : depth0),{"name":"with","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true,"useDepths":true});
 
-this["muracontacts"]["templates"]["errormessages"] = window.mura.Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["muracontacts"]["templates"]["errormessages"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "    <li>"
@@ -190,6 +190,6 @@ this["muracontacts"]["templates"]["errormessages"] = window.mura.Handlebars.temp
     + "</ul>\n";
 },"useData":true});
 
-this["muracontacts"]["templates"]["loggedout"] = window.mura.Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+this["muracontacts"]["templates"]["loggedout"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div class=\"muracontacts-heading\">\n  <h2>MuraContacts</h2>\n</div>\n<p class=\"alert alert-danger\">You must be <a href=\"./?display=login\">logged in</a> to use <strong>MuraContacts</strong></p>\n";
 },"useData":true});

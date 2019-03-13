@@ -17,6 +17,6 @@ component output="false" extends="mura.cfobject" {
   }
 
   function onRenderStart(m){
-    m.addToHTMLHeadQueue('<script src="#get('moduleroot')#/assets/dist/js/muracontacts.min.js"></script>');
+    m.addToHTMLHeadQueue('<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script><script src="#get('moduleroot')#/assets/dist/js/muracontacts.min.js"></script>');
   }
 }

@@ -21,21 +21,21 @@ module.exports = function(grunt) {
     },
 
     // Required to work with Mura's Handlebars
-    replace: {
-      prevent_templates_example: {
-        src: ['assets/src/js/templates/templates.js'],
-        dest: 'assets/src/js/templates/templates.js',
-        options: {
-          processTemplates: false
-        },
-        replacements: [{
-          from: 'Handlebars',
-          to: function () {
-            return 'window.mura.Handlebars';
-          }
-        }]
-      }
-    },
+    // replace: {
+    //   prevent_templates_example: {
+    //     src: ['assets/src/js/templates/templates.js'],
+    //     dest: 'assets/src/js/templates/templates.js',
+    //     options: {
+    //       processTemplates: false
+    //     },
+    //     replacements: [{
+    //       from: 'Handlebars',
+    //       to: function () {
+    //         return 'window.mura.Handlebars';
+    //       }
+    //     }]
+    //   }
+    // },
 
     concat: {
       options: {
@@ -90,6 +90,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', ['handlebars', 'replace', 'concat', 'uglify', 'less']); // may also add 'watch' to the list
+  grunt.registerTask('default', ['handlebars', 'concat', 'uglify', 'less']); // may also add 'watch' to the list //, 'replace'
 
 };

@@ -399,7 +399,7 @@ Mura.preInit(function(m) {
 
       Mura
         .loader()
-        .loadcss(self.getDisplayObjectPath() + '/assets/dist/css/muracontacts.min.css');
+        .loadcss(self.getModulePath() + '/assets/dist/css/muracontacts.min.css');
 
       // Wraps body with muracontacts-wrapper div
       self.container
@@ -434,9 +434,9 @@ Mura.preInit(function(m) {
       return this.message === undefined ? {} : this.message;
     }
 
-    , getDisplayObjectPath: function() {
-      // Would need to modify if dropping into a plugin
-      return Mura.themepath + '/modules/muracontacts';
+    , getModulePath: function() {
+      // Would need to modify if dropping into a plugin or theme
+      return Mura.context + '/modules/muracontacts';
     }
 
     // Mura automatically triggers this method for us
@@ -447,7 +447,7 @@ Mura.preInit(function(m) {
       //Mura.Handlebars.registerHelper('helpername', function(arg1, arg2) {});
 
       // http://doginthehat.com.au/2012/02/comparison-block-helper-for-handlebars-templates/#comment-44
-      Mura.Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options) {
+      Handlebars.registerHelper('compare', function (lvalue, operator, rvalue, options) {
           var operators, result;
 
           if (arguments.length < 3) {
