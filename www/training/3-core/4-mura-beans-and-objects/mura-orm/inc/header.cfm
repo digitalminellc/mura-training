@@ -3,7 +3,8 @@
 	m = application.mura.getBean('m').init(siteid);
 	dsn = m.globalConfig('datasource');
 	pathtohere = RemoveChars(GetDirectoryFromPath(GetCurrentTemplatePath()), 1, Len(m.globalConfig('webroot')));
-	modeldir = Left(pathtohere, Len(pathtohere) - 4) & 'model';
+	pathtoapp = Left(pathtohere, Len(pathtohere) - 4);
+	modeldir = pathtoapp & 'model';
 	m.globalConfig().registerModelDir(modeldir);
 
 	param name="url.drop" default="0";
@@ -16,7 +17,7 @@
 <html>
 <head>
 	<title>Mura ORM</title>
-	<!--- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> --->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<style>
 	* {
@@ -44,25 +45,25 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#m.globalConfig('context')#/mura-orm/">Mura ORM</a>
+				<a class="navbar-brand" href="#pathtoapp#">Mura ORM</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="main-nav">
 				<ul class="nav navbar-nav">
-					<li><a href="#m.globalConfig('context')#/mura-orm/?appreload&amp;applydbupdates">Reload&amp;ApplyDBUpdates</a></li>
-					<li><a href="#m.globalConfig('context')#/mura-orm/?drop=1">Drop Tables</a></li>
-					<li><a href="#m.globalConfig('context')#/mura-orm/?seepersons=1">View Persons</a></li>
-					<li><a href="#m.globalConfig('context')#/mura-orm/?seeaddresses=1">View Addresses</a></li>
-					<li><a href="#m.globalConfig('context')#/mura-orm/?seephones=1">View Phones</a></li>
+					<li><a href="#pathtoapp#?appreload&amp;applydbupdates">Reload&amp;ApplyDBUpdates</a></li>
+					<li><a href="#pathtoapp#?drop=1">Drop Tables</a></li>
+					<li><a href="#pathtoapp#?seepersons=1">View Persons</a></li>
+					<li><a href="#pathtoapp#?seeaddresses=1">View Addresses</a></li>
+					<li><a href="#pathtoapp#?seephones=1">View Phones</a></li>
 					<li class="dropdown">
 							<a href="##" class="dropdown-toggle" role="button" data-toggle="dropdown">Demos/Labs</a>
 							<ul class="dropdown-menu">
-								<li><a href="#m.globalConfig('context')#/mura-orm/1/">1</a></li>
-								<li><a href="#m.globalConfig('context')#/mura-orm/2/">2</a></li>
-								<li><a href="#m.globalConfig('context')#/mura-orm/3/">3</a></li>
-								<li><a href="#m.globalConfig('context')#/mura-orm/4/">4</a></li>
-								<li><a href="#m.globalConfig('context')#/mura-orm/5/">5</a></li>
-								<li><a href="#m.globalConfig('context')#/mura-orm/6/">6</a></li>
+								<li><a href="#pathtoapp#1/">1</a></li>
+								<li><a href="#pathtoapp#2/">2</a></li>
+								<li><a href="#pathtoapp#3/">3</a></li>
+								<li><a href="#pathtoapp#4/">4</a></li>
+								<li><a href="#pathtoapp#5/">5</a></li>
+								<li><a href="#pathtoapp#6/">6</a></li>
 							</ul>
 					</li>
 				</ul>
