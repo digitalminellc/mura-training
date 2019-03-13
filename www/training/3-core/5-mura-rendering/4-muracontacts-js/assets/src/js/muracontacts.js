@@ -436,7 +436,7 @@ Mura.preInit(function(m) {
 
     , getDisplayObjectPath: function() {
       // Would need to modify if dropping into a plugin
-      return Mura.themepath + '/display_objects/muracontacts';
+      return Mura.themepath + '/modules/muracontacts';
     }
 
     // Mura automatically triggers this method for us

@@ -13,6 +13,9 @@
 .tmproj
 .svn
 
+# node_modules
+node_modules
+
 # Due to a performance-related quirk in Git, 
 # you can not negate a file that is ignored due to a pattern matching a directory
 # so we'll just ignore these specific directories

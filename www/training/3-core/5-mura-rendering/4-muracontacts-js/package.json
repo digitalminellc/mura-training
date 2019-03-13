@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Example Mura Module. Used for training purposes only.",
   "main": "assets/dist/js/muracontacts.min.js",
-  "dependencies": {},
+  "dependencies": {
+    "coffeescript": "^2.3.2"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^1.0.1",
