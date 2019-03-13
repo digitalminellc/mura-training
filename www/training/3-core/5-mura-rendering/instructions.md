@@ -6,12 +6,12 @@
 * Disable Mura Tags globally
 * Enable Mura Tags at the site level
 * Allow for Mura Tags to be used in the Title field of content
-* Display Objects
-  * Create an uber simple display object, no configurator
-  * Create a simple display object, with a configurator
+* Modules (formerly Display Ojbects)
+  * Create an uber simple Module, no configurator
+  * Create a simple Module, with a configurator
   * Refer to `1-murahelloworld-cfml` example
-  * Create a display object, with a `model` directory and a `handlers` directory (include a custom handler)
-  * Create a display object with `beans`
+  * Create a Module, with a `model` directory and a `handlers` directory (include a custom handler)
+  * Create a Module with `beans`
   * Refer to `2-muracontacts-cfml` example
 * Using the Page/Location & Folder/Locations class extensions, create a custom display
 using `content_types/{Type}_{Subtype}`
