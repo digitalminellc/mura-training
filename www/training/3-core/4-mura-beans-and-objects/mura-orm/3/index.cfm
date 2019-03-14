@@ -6,7 +6,7 @@
 			// A Person
 				person = 
 					m.getBean('person')
-						//.loadBy('namelast', 'Levine')
+						//.loadBy('namelast'='Levine')
 						.set('namelast', 'Levine')
 						.set('namefirst', 'Matt');
 
