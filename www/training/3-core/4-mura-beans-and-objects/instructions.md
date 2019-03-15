@@ -20,7 +20,6 @@
     * Export Definitions
     * Import Definitions
     * Use `m.renderEditableAttribute()` to make an attribute editable for content managers
-  * See the `mura-orm` directory
 * Create some Mura Iterators
   * Use an iterator of a content item (e.g., `m.content().getKidsIterator()`)
   * Create a custom navigation using a feed bean & iterator
