@@ -338,7 +338,7 @@
         <div class="col-md-12">
           <h2>Mura JSON API Tests</h2>
           <p class="minor">
-            <a class="minor" href="http://docs.getmura.com/v5-1/mura-developers/mura-rendering/json-api/" target="_blank">JSON API Documentation &raquo;</a><br>
+            <a class="minor" href="http://docs.getmura.com/v7-1/mura-developers/mura-rendering/json-api/" target="_blank">JSON API Documentation &raquo;</a><br>
             Current SiteID: <strong>#session.siteid#</strong><br>
             Home Page ContentID: <strong>00000000000000000000000000000000001</strong></p>
 
