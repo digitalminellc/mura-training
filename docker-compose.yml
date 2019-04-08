@@ -26,6 +26,7 @@ services:
       MURA_INDEXFILEINURLS: "true"
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
+      MURA_AUTODISCOVERPLUGINS: "true"
       CFCONFIG_ADMINPASSWORD: P@55w0rd!
       #LUCEE_JAVA_OPTS: "-Xms512m -Xmx1024m"
     volumes:
