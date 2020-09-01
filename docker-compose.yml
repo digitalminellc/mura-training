@@ -5,14 +5,14 @@ services:
   mura:
     build:
       context: .
-      # context: https://github.com/stevewithington/mura-training.git#:mura-docker
-    image: stevewithington/mura-training:latest
+      # context: https://github.com/digitalminellc/mura-training.git#:mura-docker
+    image: digitalmine/mura-training:latest
     depends_on:
       - svc_muradb
     environment:
       MURA_ADMIN_USERNAME: admin
       MURA_ADMIN_PASSWORD: admin
-      MURA_ADMINEMAIL: steve.withington@blueriver.com
+      MURA_ADMINEMAIL: steve@digitalmie.com
       MURA_APPRELOADKEY: appreload
       MURA_DATASOURCE: dsn_mura
       MURA_DATABASE: muradb
