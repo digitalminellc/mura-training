@@ -47,8 +47,8 @@ Follow the steps outlined below to get the Mura training container up and runnin
         mura_1        | ===================================================================
         ```
 
-4. Once the container is ready, launch a browser window and navigate to [http://localhost:8008/].
-5. If the site only contains an empty home page, navigate to [http://localhost:8008/?appreload&applydbupdates] and the site should then be populated with sample content.
+4. Once the container is ready, launch a browser window and navigate to [http://localhost:8008/](http://localhost:8008/).
+5. If the site only contains an empty home page, navigate to [http://localhost:8008/?appreload&applydbupdates](http://localhost:8008/?appreload&applydbupdates) and the site should then be populated with sample content.
 
 ### Stop The Mura Training Container
 
@@ -63,17 +63,17 @@ To stop the container, follow the steps below.
 
 ### Mura Admin Login Information
 
-This image uses [Mura](https://www.getmura.com), a digital content experience platform. To learn more about Mura, visit [https://www.getmura.com].
+This image uses [Mura](https://www.getmura.com), a digital content experience platform. To learn more about Mura, visit [https://www.getmura.com](https://www.getmura.com).
 
-* Admin Login URL: [http://localhost:8008/admin/]
+* Admin Login URL: [http://localhost:8008/admin/](http://localhost:8008/admin/)
 * Username: `admin`
 * Password: `admin`
 
 ### Lucee Admin Login Information
 
-This image uses [Lucee](https://lucee.org), the leading open-source CFML application server/engine. To learn more about Lucee, visit ]https://lucee.org].
+This image uses [Lucee](https://lucee.org), the leading open-source CFML application server/engine. To learn more about Lucee, visit [https://lucee.org](https://lucee.org).
 
-* Admin Login URL: [http://localhost:8008/lucee/admin/server.cfm]
+* Admin Login URL: [http://localhost:8008/lucee/admin/server.cfm](http://localhost:8008/lucee/admin/server.cfm)
 * Password: `P@55w0rd!`
 
 ## Companion Training Files
