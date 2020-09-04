@@ -52,7 +52,7 @@ Follow the steps outlined below to get the Mura training container up and runnin
         etc ...
         ```
 
-    * Once you see a notification about the `WEB CONTEXT`, the container should be ready and you may proceed to the next step.    
+    * Once you see a notification about the `WEB CONTEXT`, the container should be ready and you may proceed to the next step.
 
         ``` bash
         mura_training_1            | Starting RunWAR 4.1.0
@@ -92,6 +92,12 @@ Follow the steps outlined below to get the Mura training container up and runnin
 ### Stop The Mura Training Container
 
 To stop the container, follow the steps below.
+
+1. Open the shell window where the program is running.
+2. On macOS, use `<control>+C`
+3. On Windows, use `<⌘>+C`
+
+OR
 
 1. Launch your shell program and `cd` into the cloned `../mura-training/` directory
 2. Run the following command:
