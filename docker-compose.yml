@@ -2,31 +2,38 @@ version: '3.3'
 
 services:
 
-  mura:
+  mura_training:
     build:
       context: .
       # context: https://github.com/digitalminellc/mura-training.git#:mura-docker
     image: digitalmine/mura-training:latest
     depends_on:
-      - svc_muradb
+      - svc_mura_training_mysql
     environment:
       MURA_ADMIN_USERNAME: admin
       MURA_ADMIN_PASSWORD: admin
       MURA_ADMINEMAIL: steve@digitalmie.com
+      MURA_AUTODISCOVERPLUGINS: "true"
       MURA_APPRELOADKEY: appreload
       MURA_DATASOURCE: dsn_mura
       MURA_DATABASE: muradb
       MURA_DBTYPE: mysql
+      MURA_DBCONNECTIONSTRING: "jdbc:mysql://svc_mura_training_mysql:3306/muradb?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true"
+      MURA_DBCLASS: com.mysql.jdbc.Driver
       MURA_DBUSERNAME: root
       MURA_DBPASSWORD: P@55w0rd!
       MURA_DBHOST: svc_muradb
       MURA_DBPORT: 3306
+      MURA_DEFAULTTHEMEURL:  "https://github.com/digitalminellc/mura-bundle-bootstrap4/archive/master.zip"
       MURA_PORT: 8008
       MURA_SITEIDINURLS: "false"
-      MURA_INDEXFILEINURLS: "true"
+      MURA_INDEXFILEINURLS: "false"
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
-      MURA_AUTODISCOVERPLUGINS: "true"
+      SSL_PORT: 8443
+      URL_REWRITES: "true"
+      HEAPSIZE: 1024
+      CFENGINE: lucee@5
       CFCONFIG_ADMINPASSWORD: P@55w0rd!
       #LUCEE_JAVA_OPTS: "-Xms512m -Xmx1024m"
     volumes:
@@ -40,16 +47,16 @@ services:
     tty: true
 
   # DB
-  svc_muradb:
+  svc_mura_training_mysql:
     image: mysql:5.7
     environment:
       MYSQL_DATABASE: muradb
       MYSQL_ROOT_PASSWORD: P@55w0rd!
     volumes:
-      - vol_muradb:/var/lib/mysql
+      - vol_mura_training_mysql:/var/lib/mysql
     ports:
       - "5005:3306"
 
 # Mounts
 volumes:
-  vol_muradb:
+  vol_mura_training_mysql:
