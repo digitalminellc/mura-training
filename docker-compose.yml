@@ -24,7 +24,7 @@ services:
       MURA_DBPASSWORD: P@55w0rd!
       MURA_DBHOST: svc_muradb
       MURA_DBPORT: 3306
-      MURA_DEFAULTTHEMEURL:  "https://github.com/digitalminellc/mura-bundle-bootstrap4/archive/master.zip"
+      MURA_DEFAULTTHEMEURL:  "https://github.com/digitalminellc/mura-theme-bootstrap4/archive/master.zip"
       MURA_PORT: 8008
       MURA_SITEIDINURLS: "false"
       MURA_INDEXFILEINURLS: "false"
