@@ -20,8 +20,6 @@ RUN apt-get update && apt-get install -y git && apt-get install -y rsync \
     && rsync -r --exclude '.git' mura/. ${APP_DIR} \
     && git clone --branch master --single-branch --depth 1 https://github.com/digitalminellc/mura-theme-bootstrap4.git bootstrap4 \
     && rsync -r --exclude '.git' bootstrap4/. /tmp \
-    && rm -rf mura bootstrap4 \
-    && ln -sf /dev/stdout /opt/lucee/web/logs/application.log \
-    && ln -sf /dev/stdout /opt/lucee/web/logs/exception.log
+    && rm -rf mura bootstrap4
 
 EXPOSE 8080 8443
