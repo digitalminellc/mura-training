@@ -97,6 +97,12 @@ If you're attending training, please do *not* make any changes to the [Dockerfil
 docker-compose build --no-cache
 ```
 
+To publish on [dockerhub](https://hub.docker.com/):
+
+``` bash
+docker push YourDockerUsername/RepositoryName:latest
+```
+
 ## License
 
 [MIT](LICENSE.md)
